@@ -4,6 +4,7 @@ import nullblade.potatoesandtheiruses.items.block.SelfBreakingBlock;
 import nullblade.potatoesandtheiruses.items.block.SelfBreakingPlacer;
 import nullblade.potatoesandtheiruses.items.fun.Blok;
 import nullblade.potatoesandtheiruses.items.materials.*;
+import nullblade.potatoesandtheiruses.items.tools.SwordOfHealing;
 import org.waveapi.api.Logger;
 import org.waveapi.api.WaveMod;
 import org.waveapi.api.content.items.WaveTab;
@@ -36,6 +37,8 @@ public class PotatoMain extends WaveMod {
 
         new SelfBreakingBlock();
         new SelfBreakingPlacer();
+
+        new SwordOfHealing();
 
         new Blok();
 

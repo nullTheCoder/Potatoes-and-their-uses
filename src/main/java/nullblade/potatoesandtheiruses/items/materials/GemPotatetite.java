@@ -7,8 +7,12 @@ import org.waveapi.api.content.items.recipes.WaveShapedRecipe;
 import org.waveapi.api.file.texture.Texture;
 
 public class GemPotatetite extends WaveItem {
+
+    public static GemPotatetite instance;
+
     public GemPotatetite() {
         super("potatetite_gem", PotatoMain.instance);
+        instance = this;
         setModel(new SimpleToolModel(new Texture("potato_uses/items/materials/potatetite_gem.png")));
         setTab(PotatoMain.tab);
 
