@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+//    maven {
+//        url "https://maven.waveapi.org"
+//    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation "org.waveapi:API:1.0-SNAPSHOT"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+def dir = getProperties().get('dir')
+
+task copyJar(type: Copy) {
+    from jar
+    into dir
+}
