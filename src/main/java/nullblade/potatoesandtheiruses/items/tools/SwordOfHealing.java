@@ -64,6 +64,10 @@ public class SwordOfHealing extends WaveSwordItem {
             item.damage(250, player);
             player.setHealth(player.getHealth() + 2);
         }
-        return ItemUseResult.SUCCESS;
+        if (player.getHealth() < player.getMaxHealth()) {
+            return ItemUseResult.SUCCESS;
+        } else {
+            return ItemUseResult.PASS;
+        }
     }
 }
