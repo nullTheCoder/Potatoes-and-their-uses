@@ -27,7 +27,7 @@ public class GemPotatetite extends WaveItem {
                 PotatoMain.instance)
                 .addIngredient('P', "potato_uses:potatetite")
                 .addIngredient('G', "minecraft:gold_ingot")
-                .addIngredient('E', "minecraft:emerald")
+                .addIngredient('E', "minecraft:poisonous_potato")
                 .setResultCount(2);
     }
 

@@ -5,6 +5,7 @@ import nullblade.potatoesandtheiruses.items.block.SelfBreakingPlacer;
 import nullblade.potatoesandtheiruses.items.fun.Blok;
 import nullblade.potatoesandtheiruses.items.materials.*;
 import nullblade.potatoesandtheiruses.items.tools.SwordOfHealing;
+import nullblade.potatoesandtheiruses.items.tools.TeleportStick;
 import nullblade.potatoesandtheiruses.items.tools.WarpCore;
 import org.waveapi.api.Logger;
 import org.waveapi.api.WaveMod;
@@ -36,11 +37,13 @@ public class PotatoMain extends WaveMod {
         new PotatetiteGear();
         new ClockworkPotato();
         new EnderClockworkPotato();
+        new ReinforcedStick();
 
         new SelfBreakingBlock();
         new SelfBreakingPlacer();
 
         new WarpCore();
+        new TeleportStick();
         new SwordOfHealing();
 
         new Blok();
