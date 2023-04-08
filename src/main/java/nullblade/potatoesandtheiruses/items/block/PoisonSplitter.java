@@ -87,7 +87,6 @@ public class PoisonSplitter extends WaveBlock implements TileEntityBlock {
         @Override
         public void tick(int passed) {
             ticks += passed;
-            System.out.println(passed);
             if (ticks > 20) {
                 int amount = (int)Math.floor(ticks / 20.0);
                 ticks -= amount * 20;
