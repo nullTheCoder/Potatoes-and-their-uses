@@ -1,5 +1,6 @@
 package nullblade.potatoesandtheiruses;
 
+import nullblade.potatoesandtheiruses.items.block.PoisonSplitter;
 import nullblade.potatoesandtheiruses.items.block.SelfBreakingBlock;
 import nullblade.potatoesandtheiruses.items.block.SelfBreakingPlacer;
 import nullblade.potatoesandtheiruses.items.fun.Blok;
@@ -34,6 +35,7 @@ public class PotatoMain extends WaveMod {
         new Potatetite();
         new GemPotatetite();
         new ShardPotatetite();
+        new PotatoPoison();
         new PotatetiteGear();
         new ClockworkPotato();
         new EnderClockworkPotato();
@@ -41,6 +43,7 @@ public class PotatoMain extends WaveMod {
 
         new SelfBreakingBlock();
         new SelfBreakingPlacer();
+        new PoisonSplitter();
 
         new WarpCore();
         new TeleportStick();

@@ -13,7 +13,6 @@ import org.waveapi.api.world.world.World;
 public class Blok extends WaveBlock {
     public Blok() {
         super("blok", PotatoMain.instance);
-        setTab(PotatoMain.tab);
 
         addTranslation("en_us", "Blok");
 
