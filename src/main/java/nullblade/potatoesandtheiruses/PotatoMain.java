@@ -1,6 +1,7 @@
 package nullblade.potatoesandtheiruses;
 
 import nullblade.potatoesandtheiruses.items.block.SelfBreakingBlock;
+import nullblade.potatoesandtheiruses.items.block.SelfBreakingPlacer;
 import nullblade.potatoesandtheiruses.items.fun.Blok;
 import nullblade.potatoesandtheiruses.items.materials.*;
 import org.waveapi.api.Logger;
@@ -34,7 +35,7 @@ public class PotatoMain extends WaveMod {
         new ClockworkPotato();
 
         new SelfBreakingBlock();
-
+        new SelfBreakingPlacer();
 
         new Blok();
 

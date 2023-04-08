@@ -5,6 +5,7 @@ import nullblade.potatoesandtheiruses.items.materials.ShardPotatetite;
 import org.waveapi.api.content.items.block.WaveBlock;
 import org.waveapi.api.content.items.block.model.BlockModel;
 import org.waveapi.api.content.items.block.model.SixSidedBlockModel;
+import org.waveapi.api.content.items.block.model.TopBottomSidesBlockModel;
 import org.waveapi.api.content.items.recipes.WaveShapedRecipe;
 import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.misc.Text;
@@ -23,8 +24,11 @@ import java.util.List;
 
 public class SelfBreakingBlock extends WaveBlock {
 
+    public static SelfBreakingBlock instance;
     public SelfBreakingBlock() {
         super("self_breaking_block", PotatoMain.instance);
+        instance = this;
+
         setTab(PotatoMain.tab);
 
         addTranslation("en_us", "Self Breaking Block");
