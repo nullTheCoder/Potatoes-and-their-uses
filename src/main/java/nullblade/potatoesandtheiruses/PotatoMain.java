@@ -4,6 +4,7 @@ import nullblade.potatoesandtheiruses.items.block.SelfBreakingBlock;
 import nullblade.potatoesandtheiruses.items.fun.Blok;
 import nullblade.potatoesandtheiruses.items.materials.GemPotatetite;
 import nullblade.potatoesandtheiruses.items.materials.Potatetite;
+import nullblade.potatoesandtheiruses.items.materials.PotatetiteGear;
 import nullblade.potatoesandtheiruses.items.materials.ShardPotatetite;
 import org.waveapi.api.Logger;
 import org.waveapi.api.WaveMod;
@@ -32,6 +33,7 @@ public class PotatoMain extends WaveMod {
         new Potatetite();
         new GemPotatetite();
         new ShardPotatetite();
+        new PotatetiteGear();
 
         new SelfBreakingBlock();
 

@@ -47,8 +47,8 @@ public class SelfBreakingBlock extends WaveBlock {
                 .addIngredient('P', "potato_uses:potatetite")
                 .addIngredient('S', "minecraft:stone")
                 .addIngredient('I', "minecraft:iron_ingot");
-        lore = new TranslatedText("self_breaking_block", PotatoMain.instance);
-        lore2 = new TranslatedText("self_breaking_block", PotatoMain.instance);
+        lore = new TranslatedText("lore_self_breaking_block", PotatoMain.instance);
+        lore2 = new TranslatedText("lore_self_breaking_block_2", PotatoMain.instance);
         lore.addTranslation("en_us", "This block breaks itself after a bit.");
         lore2.addTranslation("en_us", "When it breaks, it drops potatetite shards.");
     }
