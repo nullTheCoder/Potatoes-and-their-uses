@@ -29,7 +29,7 @@ public class WarpCore extends WaveItem {
         super("warp_core", PotatoMain.instance);
         setModel(new SimpleToolModel(new Texture("potato_uses/items/tools/warp_core.png")));
         setTab(PotatoMain.tab);
-        setDurability(30);
+        setDurability(20);
 
 
         addTranslation("en_us", "Warp Core");
