@@ -50,7 +50,7 @@ public class SelfBreakingPlacer extends WaveBlock {
                 .addIngredient('G', "minecraft:gold_ingot");
 
         lore = new TranslatedText("lore_self_breaking_block_placer", PotatoMain.instance);
-        lore.addTranslation("en_us", "This block creates Self Breaking Blocks under itself randomly.");
+        lore.addTranslation("en_us", "§8This block creates Self Breaking Blocks under itself randomly.");
     }
 
     private static TranslatedText lore;
