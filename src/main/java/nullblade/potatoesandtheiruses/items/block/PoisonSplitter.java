@@ -90,10 +90,7 @@ public class PoisonSplitter extends WaveBlock implements TileEntityBlock {
             System.out.println(passed);
             if (ticks > 20) {
                 int amount = (int)Math.floor(ticks / 20.0);
-                System.out.println("----------------------------------------------------");
-                System.out.println(ticks + " - " + amount + " - " + amount * 20);
                 ticks -= amount * 20;
-                System.out.println(ticks + " - " + amount + " - " + amount * 20);
                 ContainerTile tile = getWorld().getTileEntity(getPosition().addY(1), ContainerTile.class);
                 if (tile == null)
                     return;
