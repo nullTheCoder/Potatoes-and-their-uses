@@ -5,6 +5,13 @@ import org.waveapi.api.content.items.WaveItem;
 import org.waveapi.api.content.items.models.SimpleToolModel;
 import org.waveapi.api.content.items.recipes.WaveShapedRecipe;
 import org.waveapi.api.file.texture.Texture;
+import org.waveapi.api.misc.Text;
+import org.waveapi.api.misc.TranslatedText;
+import org.waveapi.api.world.inventory.ItemStack;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class ShardPotatetite extends WaveItem {
 
@@ -16,6 +23,12 @@ public class ShardPotatetite extends WaveItem {
         setTab(PotatoMain.tab);
 
         addTranslation("en_us", "Potatetite Shard");
+        this.lore = new TranslatedText("potatetite_shard_lore0", PotatoMain.instance)
+                .addTranslation("en_us", "§8Obtained from breaking block.");
+    }
+    private final TranslatedText lore;
+    public List<Text> addToolTip(ItemStack stack) {
+        return Collections.singletonList(lore);
     }
 
 }
