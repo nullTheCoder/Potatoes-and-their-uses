@@ -8,6 +8,7 @@ import nullblade.potatoesandtheiruses.items.food.BucketOfConcrete;
 import nullblade.potatoesandtheiruses.items.food.EdibleBucket;
 import nullblade.potatoesandtheiruses.items.fun.Blok;
 import nullblade.potatoesandtheiruses.items.materials.*;
+import nullblade.potatoesandtheiruses.items.tools.AdvancedTeleportStick;
 import nullblade.potatoesandtheiruses.items.tools.SwordOfHealing;
 import nullblade.potatoesandtheiruses.items.tools.TeleportStick;
 import nullblade.potatoesandtheiruses.items.tools.WarpCore;
@@ -53,6 +54,7 @@ public class PotatoMain extends WaveMod {
 
         new WarpCore();
         new TeleportStick();
+        new AdvancedTeleportStick();
         new SwordOfHealing();
 
         new EdibleBucket();

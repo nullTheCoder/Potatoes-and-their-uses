@@ -28,8 +28,7 @@ public class MagicalLens extends WaveItem {
                     },
                 PotatoMain.instance)
                 .addIngredient('P', "potato_uses:poison_essence")
-                .addIngredient('G', "minecraft:gold_nugget")
-                .setResultCount(4);
+                .addIngredient('G', "minecraft:gold_nugget");
     }
 
 }
