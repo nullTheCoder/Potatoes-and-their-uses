@@ -24,7 +24,7 @@ public class ShardPotatetite extends WaveItem {
 
         addTranslation("en_us", "Potatetite Shard");
         this.lore = new TranslatedText("potatetite_shard_lore0", PotatoMain.instance)
-                .addTranslation("en_us", "§8Obtained from breaking block.");
+                .addTranslation("en_us", "§8Obtained from self breaking block.");
     }
     private final TranslatedText lore;
     public List<Text> addToolTip(ItemStack stack) {
