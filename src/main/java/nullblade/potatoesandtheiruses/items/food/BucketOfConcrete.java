@@ -24,7 +24,7 @@ public class BucketOfConcrete extends WaveItem {
                 PotatoMain.instance)
                 .addIngredient('B', "potato_uses:edible_bucket")
                 .addIngredient('S', "minecraft:sand")
-                .addIngredient('S', "minecraft:gravel");
+                .addIngredient('G', "minecraft:gravel");
     }
 
 }

@@ -22,7 +22,7 @@ public class EdibleBucket extends WaveItem {
                             " P "
                     },
                 PotatoMain.instance)
-                .addIngredient('P', "potato_uses:potatatetite");
+                .addIngredient('P', "potato_uses:potatetite");
     }
 
 }
