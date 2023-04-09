@@ -44,6 +44,7 @@ public class PotatoMain extends WaveMod {
         new EnderClockworkPotato();
         new ReinforcedStick();
         new PoisonEssence();
+        new MagicalLens();
 
         new SelfBreakingBlock();
         new SelfBreakingPlacer();
