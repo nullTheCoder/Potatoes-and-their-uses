@@ -8,28 +8,28 @@ import org.waveapi.api.content.items.recipes.WaveShapedRecipe;
 import org.waveapi.api.content.tags.Tags;
 import org.waveapi.api.file.texture.Texture;
 
-public class Potatetite extends WaveItem {
-    public Potatetite() {
-        super("potatetite", PotatoMain.instance);
-        setModel(new SimpleItemModel(new Texture("potato_uses/items/materials/potatetite.png")));
+public class MagicalLens extends WaveItem {
+
+    public static MagicalLens instance;
+
+    public MagicalLens() {
+        super("magic_lens", PotatoMain.instance);
+        instance = this;
+        setModel(new SimpleItemModel(new Texture("potato_uses/items/materials/magical_lens.png")));
         setTab(PotatoMain.tab);
 
-        addTranslation("en_us", "Potatetite");
+        addTranslation("en_us", "Magical Lens");
 
         new WaveShapedRecipe(this,
                     new String[]{
-                            "PGP",
-                            "IPI",
-                            "PGP"
+                            "G G",
+                            " P ",
+                            "G G"
                     },
                 PotatoMain.instance)
-                .addIngredient('P', "minecraft:potato")
+                .addIngredient('P', "potato_uses:poison_essence")
                 .addIngredient('G', "minecraft:gold_nugget")
-                .addIngredient('I', "minecraft:iron_nugget")
                 .setResultCount(4);
-
-        tag(Tags.INGOT);
-
     }
 
 }
