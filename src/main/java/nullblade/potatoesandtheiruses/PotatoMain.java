@@ -1,9 +1,6 @@
 package nullblade.potatoesandtheiruses;
 
-import nullblade.potatoesandtheiruses.items.block.PoisonSplitter;
-import nullblade.potatoesandtheiruses.items.block.Poisoner;
-import nullblade.potatoesandtheiruses.items.block.SelfBreakingBlock;
-import nullblade.potatoesandtheiruses.items.block.SelfBreakingPlacer;
+import nullblade.potatoesandtheiruses.items.block.*;
 import nullblade.potatoesandtheiruses.items.food.BucketOfConcrete;
 import nullblade.potatoesandtheiruses.items.food.EdibleBucket;
 import nullblade.potatoesandtheiruses.items.fun.Blok;
@@ -51,6 +48,7 @@ public class PotatoMain extends WaveMod {
         new SelfBreakingPlacer();
         new PoisonSplitter();
         new Poisoner();
+        new EnderBlock();
 
         new WarpCore();
         new TeleportStick();
