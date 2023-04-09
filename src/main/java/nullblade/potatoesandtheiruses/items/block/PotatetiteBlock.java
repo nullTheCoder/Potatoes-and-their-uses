@@ -47,28 +47,5 @@ public class PotatetiteBlock extends WaveBlock {
                 PotatoMain.instance)
                 .addIngredient('P', "potato_uses:potatetite_block")
                 .setResultCount(9);
-
-        lore = new TranslatedText("ender_block_lore", PotatoMain.instance).addTranslation("en_us", "§8§o*Teleports behind you*");
-    }
-
-    private static TranslatedText lore;
-
-    @Override
-    public List<Text> addToolTip(ItemStack stack) {
-        return Collections.singletonList(lore);
-    }
-
-    @Override
-    public ItemUseResult onUse(BlockState blockState, BlockPos pos, World world, EntityPlayer entityPlayer, UseHand useHand) {
-        if (!world.isClientSide()) {
-            BlockPos newPos = new BlockPos(entityPlayer.getPosition().add(entityPlayer.getLookVector().multiply(-3, 0, -3)));
-
-            if (world.getBlockState(newPos).getBlock() == MinecraftBlocks.AIR) {
-                world.setBlockState(newPos, blockState);
-                world.setBlockState(pos, MinecraftBlocks.AIR.getDefaultState());
-            }
-
-        }
-        return ItemUseResult.SUCCESS;
     }
 }
