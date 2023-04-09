@@ -4,6 +4,7 @@ import nullblade.potatoesandtheiruses.PotatoMain;
 import org.waveapi.api.content.items.WaveItem;
 import org.waveapi.api.content.items.models.SimpleToolModel;
 import org.waveapi.api.content.items.recipes.WaveShapedRecipe;
+import org.waveapi.api.content.tags.Tags;
 import org.waveapi.api.file.texture.Texture;
 
 public class Potatetite extends WaveItem {
@@ -25,6 +26,9 @@ public class Potatetite extends WaveItem {
                 .addIngredient('G', "minecraft:gold_nugget")
                 .addIngredient('I', "minecraft:iron_nugget")
                 .setResultCount(4);
+
+        tag(Tags.INGOT);
+
     }
 
 }
