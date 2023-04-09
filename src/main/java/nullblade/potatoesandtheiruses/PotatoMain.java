@@ -3,6 +3,8 @@ package nullblade.potatoesandtheiruses;
 import nullblade.potatoesandtheiruses.items.block.PoisonSplitter;
 import nullblade.potatoesandtheiruses.items.block.SelfBreakingBlock;
 import nullblade.potatoesandtheiruses.items.block.SelfBreakingPlacer;
+import nullblade.potatoesandtheiruses.items.food.BucketOfConcrete;
+import nullblade.potatoesandtheiruses.items.food.EdibleBucket;
 import nullblade.potatoesandtheiruses.items.fun.Blok;
 import nullblade.potatoesandtheiruses.items.materials.*;
 import nullblade.potatoesandtheiruses.items.tools.SwordOfHealing;
@@ -40,6 +42,7 @@ public class PotatoMain extends WaveMod {
         new ClockworkPotato();
         new EnderClockworkPotato();
         new ReinforcedStick();
+        new PoisonEssence();
 
         new SelfBreakingBlock();
         new SelfBreakingPlacer();
@@ -48,6 +51,9 @@ public class PotatoMain extends WaveMod {
         new WarpCore();
         new TeleportStick();
         new SwordOfHealing();
+
+        new EdibleBucket();
+        new BucketOfConcrete();
 
         new Blok();
 
