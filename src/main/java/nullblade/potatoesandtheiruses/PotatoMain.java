@@ -44,6 +44,7 @@ public class PotatoMain extends WaveMod {
         new PoisonEssence();
         new MagicalLens();
 
+        new PotatetiteBlock();
         new SelfBreakingBlock();
         new SelfBreakingPlacer();
         new PoisonSplitter();
