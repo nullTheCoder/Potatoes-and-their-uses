@@ -9,8 +9,11 @@ import org.waveapi.api.content.tags.Tags;
 import org.waveapi.api.file.texture.Texture;
 
 public class Potatetite extends WaveItem {
+    public static WaveItem instance;
+
     public Potatetite() {
         super("potatetite", PotatoMain.instance);
+        instance = this;
         setModel(new SimpleItemModel(new Texture("potato_uses/items/materials/potatetite.png")));
         setTab(PotatoMain.tab);
 

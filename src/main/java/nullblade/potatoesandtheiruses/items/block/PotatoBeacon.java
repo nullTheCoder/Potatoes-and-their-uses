@@ -1,7 +1,11 @@
 package nullblade.potatoesandtheiruses.items.block;
 
 import nullblade.potatoesandtheiruses.PotatoMain;
+import nullblade.potatoesandtheiruses.items.materials.GemPotatetite;
+import nullblade.potatoesandtheiruses.items.materials.Potatetite;
+import nullblade.potatoesandtheiruses.items.materials.PrimordialPotatoShard;
 import org.waveapi.api.content.items.MinecraftItems;
+import org.waveapi.api.content.items.WaveItem;
 import org.waveapi.api.content.items.block.WaveBlock;
 import org.waveapi.api.content.items.block.blockentities.DeltaTicking;
 import org.waveapi.api.content.items.block.blockentities.TileEntityBlock;
@@ -10,9 +14,11 @@ import org.waveapi.api.content.items.block.blockentities.WaveTileEntity;
 import org.waveapi.api.content.items.block.blockentities.types.ContainerTile;
 import org.waveapi.api.content.items.block.model.TopBottomSidesBlockModel;
 import org.waveapi.api.content.items.recipes.WaveShapedRecipe;
+import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.misc.Text;
 import org.waveapi.api.misc.TranslatedText;
 import org.waveapi.api.world.inventory.ItemStack;
+import org.waveapi.api.world.world.World;
 
 import java.util.Arrays;
 import java.util.List;
@@ -88,9 +94,110 @@ public class PotatoBeacon extends WaveBlock implements TileEntityBlock {
         public void tick(int passed) {
             ticks += passed;
             if (ticks > 400) {
-                int amount = (int) Math.floor(ticks / 10.0);
-                ticks -= amount * 10;
+                int amount = (int) Math.floor(ticks / 400.0);
+                ticks -= amount * 400;
+                int level = 0;
+                lvl_loop: while (level < 4) {
+                    level++;
+                    for (int x = -level ; x < level ; x++) {
+                        for (int z = -level ; z < level ; z++) {
+                            if (!(getWorld().getBlockState(getPosition().add(x, level, z)).getBlock() instanceof PotatetiteBlock)) {
+                                level--;
+                                break lvl_loop;
+                            }
+                        }
+                    }
+                }
+                World world = getWorld();
+                BlockPos pos = getPosition().add(0, -1, 0);
+                ContainerTile tile = getWorld().getTileEntity(pos, ContainerTile.class);
+                switch (level) {
+                    case 0:
+                        drop(pos, tile, world,
+                            new WaveItem[] {
+                                    MinecraftItems.POTATO
+                            },
+                            new int[] {
+                                    1
+                            }
+                        );
+                        break;
+                    case 1:
+                        drop(pos, tile, world,
+                                new WaveItem[] {
+                                        MinecraftItems.POTATO,
+                                        MinecraftItems.POISONOUS_POTATO
+                                },
+                                new int[] {
+                                        1 + random.nextInt(8),
+                                        1 + random.nextInt(2)
+                                }
+                        );
+                        break;
+                    case 2:
+                        drop(pos, tile, world,
+                                new WaveItem[] {
+                                        MinecraftItems.POTATO,
+                                        MinecraftItems.POISONOUS_POTATO,
+                                        Potatetite.instance,
+                                        GemPotatetite.instance
+                                },
+                                new int[] {
+                                        1 + random.nextInt(12),
+                                        1 + random.nextInt(4),
+                                        1 + random.nextInt(3),
+                                        random.nextInt(2)
+                                }
+                        );
+                        break;
+                    case 3:
+                        drop(pos, tile, world,
+                                new WaveItem[] {
+                                        MinecraftItems.POTATO,
+                                        MinecraftItems.POISONOUS_POTATO,
+                                        Potatetite.instance,
+                                        GemPotatetite.instance
+                                },
+                                new int[] {
+                                        1 + random.nextInt(24),
+                                        1 + random.nextInt(6),
+                                        1 + random.nextInt(6),
+                                        1 + random.nextInt(2)
+                                }
+                        );
+                        break;
+                    case 4:
+                        drop(pos, tile, world,
+                                new WaveItem[] {
+                                        MinecraftItems.POTATO,
+                                        MinecraftItems.POISONOUS_POTATO,
+                                        Potatetite.instance,
+                                        GemPotatetite.instance,
+                                        PrimordialPotatoShard.instance
+                                },
+                                new int[] {
+                                        1 + random.nextInt(24),
+                                        1 + random.nextInt(6),
+                                        1 + random.nextInt(6),
+                                        1 + random.nextInt(2),
+                                        random.nextInt(2)
+                                }
+                        );
+                        break;
+                }
+            }
+        }
 
+        public void drop(BlockPos pos, ContainerTile tile, World world, WaveItem[] items, int[] amounts) {
+            for (int i = 0 ; i < items.length ; i++) {
+                ItemStack stack = items[i].getDefaultStack();
+                stack.setAmount(amounts[i]);
+                int totalInserted = tile == null ? 0 : tile.giveItem(stack);
+                if (amounts[i] > totalInserted) {
+                    stack = items[i].getDefaultStack();
+                    stack.setAmount(amounts[i] - totalInserted);
+                    world.dropItem(pos.toVector3().add(0.5, 0.5, 0.5), stack);
+                }
             }
         }
 

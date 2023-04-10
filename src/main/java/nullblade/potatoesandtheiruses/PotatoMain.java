@@ -5,10 +5,7 @@ import nullblade.potatoesandtheiruses.items.food.BucketOfConcrete;
 import nullblade.potatoesandtheiruses.items.food.EdibleBucket;
 import nullblade.potatoesandtheiruses.items.fun.Blok;
 import nullblade.potatoesandtheiruses.items.materials.*;
-import nullblade.potatoesandtheiruses.items.tools.AdvancedTeleportStick;
-import nullblade.potatoesandtheiruses.items.tools.SwordOfHealing;
-import nullblade.potatoesandtheiruses.items.tools.TeleportStick;
-import nullblade.potatoesandtheiruses.items.tools.WarpCore;
+import nullblade.potatoesandtheiruses.items.tools.*;
 import org.waveapi.api.Logger;
 import org.waveapi.api.WaveMod;
 import org.waveapi.api.content.items.WaveTab;
@@ -43,6 +40,8 @@ public class PotatoMain extends WaveMod {
         new ReinforcedStick();
         new PoisonEssence();
         new MagicalLens();
+        new PrimordialPotatoShard();
+        new PrimordialPotato();
 
         new PotatetiteBlock();
         new SelfBreakingBlock();
@@ -52,6 +51,7 @@ public class PotatoMain extends WaveMod {
         new EnderBlock();
         new PotatoBeacon();
 
+        new PotatoBeaconProbe();
         new WarpCore();
         new TeleportStick();
         new AdvancedTeleportStick();
