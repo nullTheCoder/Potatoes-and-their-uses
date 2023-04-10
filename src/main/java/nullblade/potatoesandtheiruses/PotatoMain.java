@@ -50,6 +50,7 @@ public class PotatoMain extends WaveMod {
         new PoisonSplitter();
         new Poisoner();
         new EnderBlock();
+        new PotatoBeacon();
 
         new WarpCore();
         new TeleportStick();
