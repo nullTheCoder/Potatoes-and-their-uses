@@ -29,18 +29,18 @@ public class PotatoBeaconProbe extends WaveItem {
         setModel(new SimpleToolModel(new Texture("potato_uses/items/tools/potato_beacon_probe.png")));
         setTab(PotatoMain.tab);
 
+        setMaxStackSize(1);
 
         addTranslation("en_us", "Potato Beacon Probe");
 
         new WaveShapedRecipe(this,
                     new String[]{
                             " EL",
-                            " CE",
+                            " SE",
                             "S  "
                     },
                 PotatoMain.instance)
                 .addIngredient('S', "potato_uses:reinforced_stick")
-                .addIngredient('C', "potato_uses:teleport_stick")
                 .addIngredient('L', "potato_uses:magic_lens")
                 .addIngredient('E', "potato_uses:ender_clockwork_potato");
 

@@ -1,6 +1,7 @@
 package nullblade.potatoesandtheiruses.items.tools;
 
 import nullblade.potatoesandtheiruses.PotatoMain;
+import org.waveapi.api.content.items.Rarity;
 import org.waveapi.api.content.items.WaveItem;
 import org.waveapi.api.content.items.block.MinecraftBlocks;
 import org.waveapi.api.content.items.models.SimpleToolModel;
@@ -26,6 +27,7 @@ public class PrimordialTeleportStick extends WaveItem {
         setModel(new SimpleToolModel(new Texture("potato_uses/items/tools/primordial_teleport_stick.png")));
         setTab(PotatoMain.tab);
         setDurability(300);
+        setRarity(Rarity.EPIC);
 
 
         addTranslation("en_us", "Primordial Teleport Stick");

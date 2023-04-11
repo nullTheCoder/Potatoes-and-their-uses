@@ -57,6 +57,8 @@ public class PotatoMain extends WaveMod {
         new AdvancedTeleportStick();
         new PrimordialTeleportStick();
         new SwordOfHealing();
+        new PotatetiteDagger();
+        new PrimordialPotatetiteDagger();
 
         new EdibleBucket();
         new BucketOfConcrete();
