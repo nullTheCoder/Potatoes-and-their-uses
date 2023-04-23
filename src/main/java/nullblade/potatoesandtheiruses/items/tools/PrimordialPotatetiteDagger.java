@@ -2,12 +2,12 @@ package nullblade.potatoesandtheiruses.items.tools;
 
 import nullblade.potatoesandtheiruses.PotatoMain;
 import nullblade.potatoesandtheiruses.items.materials.GemPotatetite;
-import org.waveapi.api.content.items.Rarity;
-import org.waveapi.api.content.items.models.SimpleToolModel;
-import org.waveapi.api.content.items.recipes.WaveShapedRecipe;
-import org.waveapi.api.content.items.recipes.ingredients.SimpleItemIngredient;
-import org.waveapi.api.content.items.tools.WaveSwordItem;
-import org.waveapi.api.content.items.tools.WaveToolMaterial;
+import org.waveapi.api.items.Rarity;
+import org.waveapi.api.items.models.SimpleToolModel;
+import org.waveapi.api.items.recipes.WaveShapedRecipe;
+import org.waveapi.api.items.recipes.ingredients.SimpleItemIngredient;
+import org.waveapi.api.items.tools.WaveSwordItem;
+import org.waveapi.api.items.tools.WaveToolMaterial;
 import org.waveapi.api.file.texture.Texture;
 
 public class PrimordialPotatetiteDagger extends WaveSwordItem {

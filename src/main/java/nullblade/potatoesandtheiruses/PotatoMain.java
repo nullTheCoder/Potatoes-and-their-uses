@@ -8,7 +8,7 @@ import nullblade.potatoesandtheiruses.items.materials.*;
 import nullblade.potatoesandtheiruses.items.tools.*;
 import org.waveapi.api.Logger;
 import org.waveapi.api.WaveMod;
-import org.waveapi.api.content.items.WaveTab;
+import org.waveapi.api.items.WaveTab;
 
 public class PotatoMain extends WaveMod {
 

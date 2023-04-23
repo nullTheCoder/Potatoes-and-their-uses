@@ -1,14 +1,14 @@
 package nullblade.potatoesandtheiruses.items.materials;
 
 import nullblade.potatoesandtheiruses.PotatoMain;
-import org.waveapi.api.content.items.WaveItem;
-import org.waveapi.api.content.items.models.SimpleItemModel;
-import org.waveapi.api.content.items.models.SimpleToolModel;
-import org.waveapi.api.content.items.recipes.WaveShapedRecipe;
+import org.waveapi.api.items.WaveItem;
+import org.waveapi.api.items.models.SimpleItemModel;
+import org.waveapi.api.items.models.SimpleToolModel;
+import org.waveapi.api.items.recipes.WaveShapedRecipe;
 import org.waveapi.api.file.texture.Texture;
 import org.waveapi.api.misc.Text;
 import org.waveapi.api.misc.TranslatedText;
-import org.waveapi.api.world.inventory.ItemStack;
+import org.waveapi.api.items.inventory.ItemStack;
 
 import java.util.Arrays;
 import java.util.Collections;

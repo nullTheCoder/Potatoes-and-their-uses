@@ -1,19 +1,19 @@
 package nullblade.potatoesandtheiruses.items.block;
 
 import nullblade.potatoesandtheiruses.PotatoMain;
-import org.waveapi.api.content.items.block.MinecraftBlocks;
-import org.waveapi.api.content.items.block.WaveBlock;
-import org.waveapi.api.content.items.block.model.SixSidedBlockModel;
-import org.waveapi.api.content.items.recipes.WaveShapedRecipe;
+import org.waveapi.api.items.block.MinecraftBlocks;
+import org.waveapi.api.items.block.WaveBlock;
+import org.waveapi.api.items.block.model.SixSidedBlockModel;
+import org.waveapi.api.items.recipes.WaveShapedRecipe;
 import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.misc.Text;
 import org.waveapi.api.misc.TranslatedText;
-import org.waveapi.api.world.entity.living.EntityPlayer;
-import org.waveapi.api.world.inventory.ItemStack;
-import org.waveapi.api.world.inventory.ItemUseResult;
-import org.waveapi.api.world.inventory.UseHand;
-import org.waveapi.api.world.world.BlockState;
-import org.waveapi.api.world.world.World;
+import org.waveapi.api.entities.entity.living.EntityPlayer;
+import org.waveapi.api.items.inventory.ItemStack;
+import org.waveapi.api.items.ItemUseResult;
+import org.waveapi.api.items.UseHand;
+import org.waveapi.api.world.BlockState;
+import org.waveapi.api.world.World;
 
 import java.util.Collections;
 import java.util.List;
