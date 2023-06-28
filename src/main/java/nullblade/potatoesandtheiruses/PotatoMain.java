@@ -2,6 +2,7 @@ package nullblade.potatoesandtheiruses;
 
 import nullblade.potatoesandtheiruses.items.block.*;
 import nullblade.potatoesandtheiruses.items.food.BucketOfConcrete;
+import nullblade.potatoesandtheiruses.items.food.BucketOfVoidConcrete;
 import nullblade.potatoesandtheiruses.items.food.EdibleBucket;
 import nullblade.potatoesandtheiruses.items.fun.Blok;
 import nullblade.potatoesandtheiruses.items.materials.*;
@@ -51,6 +52,7 @@ public class PotatoMain extends WaveMod {
         new Poisoner();
         new EnderBlock();
         new VoidPotatoMiner();
+        new VoidPotatoSieve();
         new PotatoBeacon();
 
         new PotatoBeaconProbe();
@@ -64,6 +66,7 @@ public class PotatoMain extends WaveMod {
 
         new EdibleBucket();
         new BucketOfConcrete();
+        new BucketOfVoidConcrete();
 
         new Blok();
 
