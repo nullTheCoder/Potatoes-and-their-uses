@@ -57,14 +57,18 @@ public class TeleportStick extends WaveItem {
 
     @Override
     public ItemUseResult onUse(ItemStack item, UseHand hand, EntityPlayer player, World world) {
-        BlockPos pos = player.getBlockLookingAt(35, false);
+        return getItemUseResult(item, player, world, 35, 3);
+    }
+
+    public static ItemUseResult getItemUseResult(ItemStack item, EntityPlayer player, World world, int distance, int correctness) {
+        BlockPos pos = player.getBlockLookingAt(distance, false);
         if (pos != null) {
-            for (int i = 0 ; i < 3 ; i++) {
+            for (int i = 0 ; i < correctness ; i++) {
                 pos = pos.addY(1);
-                if (world.getBlockState(pos).getBlock() == MinecraftBlocks.AIR &&
-                        world.getBlockState(pos.addY(1)).getBlock() == MinecraftBlocks.AIR) {
+                if (!world.isBlockSolid(pos) &&
+                        !world.isBlockSolid((pos.addY(1)))) {
                     item.damage(1, player);
-                    player.setPosition(pos.toVector3().add(0.5, 1.0, 0.5));
+                    player.setPosition(pos.toVector3().add(0.5, 0.1, 0.5));
                     return ItemUseResult.SUCCESS;
                 }
             }

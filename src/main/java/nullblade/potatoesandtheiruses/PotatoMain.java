@@ -17,7 +17,7 @@ public class PotatoMain extends WaveMod {
 
     public static WaveTab tab;
     public PotatoMain() {
-        super("potato_uses", "0.1");
+        super();
         instance = this;
     }
 

@@ -3,13 +3,13 @@ plugins {
 }
 
 group 'nullblade'
-version '2.0-SNAPSHOT'
+version '2.1-SNAPSHOT'
 
 repositories {
     mavenCentral()
     mavenLocal()
 //    maven {
-//        url "https://maven.waveapi.org"
+//        url "https://maven.waveapi.org/"
 //    }
 }
 

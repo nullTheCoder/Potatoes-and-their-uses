@@ -3,7 +3,6 @@ package nullblade.potatoesandtheiruses.items.materials;
 import nullblade.potatoesandtheiruses.PotatoMain;
 import org.waveapi.api.items.WaveItem;
 import org.waveapi.api.items.models.SimpleItemModel;
-import org.waveapi.api.items.models.SimpleToolModel;
 import org.waveapi.api.items.recipes.WaveShapedRecipe;
 import org.waveapi.api.items.tags.Tags;
 import org.waveapi.api.file.texture.Texture;

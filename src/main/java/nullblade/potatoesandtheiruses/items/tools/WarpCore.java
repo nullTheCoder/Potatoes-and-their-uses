@@ -60,15 +60,6 @@ public class WarpCore extends WaveItem {
 
     @Override
     public ItemUseResult onUse(ItemStack item, UseHand hand, EntityPlayer player, World world) {
-        BlockPos pos = player.getBlockLookingAt(25, false);
-        if (pos != null && world.getBlockState(pos.addY(1)).getBlock() == MinecraftBlocks.AIR &&
-                world.getBlockState(pos.addY(2)).getBlock() == MinecraftBlocks.AIR) {
-            item.damage(1, player);
-            player.setPosition(pos.toVector3().add(0.5, 1.0, 0.5));
-        } else {
-            player.damage(DamageSource.GENERIC, 4);
-        }
-
-        return ItemUseResult.SUCCESS;
+        return TeleportStick.getItemUseResult(item, player, world, 25, 1);
     }
 }
