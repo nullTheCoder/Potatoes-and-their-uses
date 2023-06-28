@@ -59,8 +59,8 @@ public class PoisonSplitter extends WaveBlock implements TileEntityBlock {
                 .addIngredient('S', Tags.SAND)
                 .addIngredient('.', Tags.COBBLESTONE)
                 .addIngredient('#', "potato_uses:clockwork_potato");
-        lore = new TranslatedText("lore_self_breaking_block", PotatoMain.instance);
-        lore2 = new TranslatedText("lore_self_breaking_block_2", PotatoMain.instance);
+        lore = new TranslatedText("poison_potato_splitter", PotatoMain.instance);
+        lore2 = new TranslatedText("poison_potato_splitter", PotatoMain.instance);
         lore.addTranslation("en_us", "§8Takes poisoned potatoes from container on top.");
         lore2.addTranslation("en_us", "§8Outputs potatoes and potato poison down.");
     }

@@ -24,6 +24,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+import static nullblade.potatoesandtheiruses.Utils.drop;
+
 public class PotatoBeacon extends WaveBlock implements TileEntityBlock {
 
     public static PotatoBeacon instance;
@@ -184,19 +186,6 @@ public class PotatoBeacon extends WaveBlock implements TileEntityBlock {
                                 }
                         );
                         break;
-                }
-            }
-        }
-
-        public void drop(BlockPos pos, ContainerTile tile, World world, WaveItem[] items, int[] amounts) {
-            for (int i = 0 ; i < items.length ; i++) {
-                ItemStack stack = items[i].getDefaultStack();
-                stack.setAmount(amounts[i]);
-                int totalInserted = tile == null ? 0 : tile.giveItem(stack);
-                if (amounts[i] > totalInserted) {
-                    stack = items[i].getDefaultStack();
-                    stack.setAmount(amounts[i] - totalInserted);
-                    world.dropItem(pos.toVector3().add(0.5, 0.5, 0.5), stack);
                 }
             }
         }

@@ -32,12 +32,13 @@ public class EnderBlock extends WaveBlock {
 
         new WaveShapedRecipe(this,
                     new String[]{
-                            "SLS",
+                            "VLV",
                             "E#E",
                             "SSS"
                     },
                 PotatoMain.instance)
                 .addIngredient('L', "potato_uses:magic_lens")
+                .addIngredient('V', "potato_uses:void_potato")
                 .addIngredient('S', "minecraft:stone")
                 .addIngredient('E', "potato_uses:ender_clockwork_potato")
                 .addIngredient('#', "potato_uses:warp_core");

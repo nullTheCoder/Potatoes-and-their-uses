@@ -40,6 +40,7 @@ public class PotatoMain extends WaveMod {
         new ReinforcedStick();
         new PoisonEssence();
         new MagicalLens();
+        new VoidPotato();
         new PrimordialPotatoShard();
         new PrimordialPotato();
 
@@ -49,6 +50,7 @@ public class PotatoMain extends WaveMod {
         new PoisonSplitter();
         new Poisoner();
         new EnderBlock();
+        new VoidPotatoMiner();
         new PotatoBeacon();
 
         new PotatoBeaconProbe();
